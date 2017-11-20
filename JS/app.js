@@ -12,12 +12,15 @@ button.addEventListener('click', function(event) {
   var box = document.createElement('p');
   if (text === ''){
   event.preventDefault();
-  textArea.value = '¡Necesitas llenar este espacio!';
+
   }else{
   box.innerHTML = text + '\n' + register;
   message.appendChild(box);
+  var newChild = message.firstChild;
+  message.insertBefore(box,newChild);
 }
 })
+
 //Funcion contadora de carácteres
 textArea.addEventListener('keyup', function(){
   var counter = 140 - (document.getElementById('textArea').value.length);
@@ -29,6 +32,16 @@ textArea.addEventListener('keyup', function(){
   } else if(counter >130){
     number.style.color = '#088A85';
   }
+  })
+//Funcion para detectar click
+textArea.addEventListener('focus', function(event){
+  slash.style.border = '2px solid #088A85';
+  button.style.backgroundColor = '#2ECCFA';
+})
+//funcion para detectar el blur
+textArea.addEventListener('blur', function(event){
+  slash.style.border = '1px solid #E6E6E6';
+  button.style.backgroundColor = '#BDBDBD';
 
 })
 
