@@ -1,0 +1,79 @@
+body{
+  margin : 0px;
+  padding : 0px;
+  background-image: url(../assets/IMG/bla.jpg);
+  font-family: courier;
+}
+h1{
+  background-color: #2ECCFA;
+  margin: 0px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  position: fixed;
+  top:0px;
+  width: 100%;
+  z-index: 1000;
+}
+aside{
+  position: relative;
+  top: 100px;
+  text-align: center;
+  font-weight: 700;
+}
+#container1, #container2 {
+  text-align: left;
+  display: inline-block;
+  width: 37%;
+  padding: 15px;
+  background-color: #fff;
+}
+#container1{
+  line-height: 2;
+  padding-left: 30px;
+  font-size: 18px;
+}
+span{
+  color: #088A85;
+  font-weight: 900;
+  display: inline-block;
+  font-size: 25px;
+  padding: 15px 0;
+}
+textarea{
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 20px;
+  font-family: courier;
+  font-weight: bold;
+  line-height: 2;
+}
+
+#number{
+  float: right;
+  font-size: 25px;
+  color: #088A85;
+}
+button{
+  text-decoration: none;
+  border: none;
+  padding: 15px 25px;
+  background-color: #BDBDBD;
+  color: #fff;
+  border-radius: 3px;
+  font-family: courier;
+  font-weight: 900;
+  font-size: 16px;
+}
+p{
+  background-color: white;
+  position: relative;
+  top: 150px;
+  margin: 15px auto;
+  width: 77%;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
