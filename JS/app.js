@@ -11,13 +11,13 @@ button.addEventListener('click', function(event) {
   var text = textArea.value;
   var box = document.createElement('p');
   if (text === ''){
-  event.preventDefault();
-
+    event.preventDefault();
+    textArea.value = 'Necesitas rellenar este espacio!';
   }else{
-  box.innerHTML = text + '\n' + register;
-  message.appendChild(box);
-  var newChild = message.firstChild;
-  message.insertBefore(box,newChild);
+    box.innerHTML = text + '\n' + register;
+    message.appendChild(box);
+    var newChild = message.firstChild;
+    message.insertBefore(box,newChild);
 }
 })
 
