@@ -25,11 +25,11 @@ window.addEventListener('load', function(event) {
   textArea.addEventListener('keyup', function() {
     var counter = 140 - (document.getElementById('textArea').value.length);
     document.getElementById('number').textContent = counter;
-    if (counter <= 120) {
-      number.style.color = 'red';
-    } else if (counter <= 130) {
+    if (counter <= 20) {
       number.style.color = 'blue';
-    } else if (counter > 130) {
+    } else if (counter <= 10) {
+      number.style.color = 'red';
+    } else if (counter > 20) {
       number.style.color = '#088A85';
     }
   });
